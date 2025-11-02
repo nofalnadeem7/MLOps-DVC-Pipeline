@@ -1,0 +1,17 @@
+prepare:
+  input_path: data/sample_data.csv
+  output_path: data/prepared_data.csv
+
+features:
+  input_path: data/prepared_data.csv
+  output_path: data/features.csv
+
+train:
+  data_path: data/features.csv
+  model_path: models/model.pkl
+  test_size: 0.2
+  random_state: 42
+
+evaluate:
+  data_path: data/features.csv
+  model_path: models/model.pkl
