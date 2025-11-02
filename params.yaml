@@ -15,3 +15,5 @@ train:
 evaluate:
   data_path: data/features.csv
   model_path: models/model.pkl
+  metrics_path: metrics/metrics.json
+

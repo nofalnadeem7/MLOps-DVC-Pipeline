@@ -6,7 +6,7 @@ stages:
       - data/sample_data.csv
       - params.yaml
     outs:
-      - data/prepared_data.csv
+       - data/prepared_data.csv
 
   feature:
     cmd: python src/feature.py
@@ -34,5 +34,5 @@ stages:
       - data/features.csv
       - params.yaml
     metrics:
-      - metrics.json:
+      - metrics/metrics.json:
           cache: false
